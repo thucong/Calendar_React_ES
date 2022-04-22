@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import AddWorkModal from './components/AddWorkModal';
+import Calendar from './components/Calendar';
+import ChangeMonth from './components/ChangeMonth';
+import './styles.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="d-flex justify-content-end">
+          <div className="btn-group mt-5 w-25 " role="group" >
+              <button type="button" className="btn btn-outline-primary display-month">Month</button>
+              <button type="button" className="btn btn-outline-primary display-year">Year</button>
+          </div>
+        </div>
+        <div className="list-calendar-months ">
+            <div className="calendar">   
+             <ChangeMonth />   
+             <Calendar />
+             <AddWorkModal />
+            </div>
+        </div>
+      
+      </div>
+      
+
     </div>
   );
 }
