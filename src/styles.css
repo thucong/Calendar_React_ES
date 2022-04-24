@@ -82,3 +82,13 @@ padding: 20px;
     padding: 5px;
     border-radius: 8px;
 }
+.bg-image{
+  background-image: url('https://haycafe.vn/wp-content/uploads/2021/12/Hinh-nen-Powerpoint-lich-su-cay-tre-Viet-Nam.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 950px;
+}
+.color-icon-selective-yellow{
+  color: #F8BB05;
+}

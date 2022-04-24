@@ -22,7 +22,7 @@ function DeleteWorkModal(props) {
                         </div>
                         <div className="fomrgroup text-center">
                             <button className="btn btn-success add" onClick={onSubmit}>OK</button> &emsp;
-                            <button className="btn btn-success add" onClick={props.closeDelete}>Cancel</button>
+                            <button className="btn btn-danger add" onClick={props.closeDelete}>Cancel</button>
                         </div>
                     </form>
                 </div>

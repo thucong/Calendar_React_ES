@@ -6,7 +6,7 @@ import './styles.css'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-image">
       <div className="container">
         <div className="d-flex justify-content-end">
           <div className="btn-group mt-5 w-25 " role="group" >
