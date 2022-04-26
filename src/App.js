@@ -9,10 +9,10 @@ function App() {
     <div className="App bg-image">
       <div className="container">
         <div className="d-flex justify-content-end">
-          <div className="btn-group mt-5 w-25 " role="group" >
+          {/* <div className="btn-group mt-5 w-25 " role="group" >
               <button type="button" className="btn btn-outline-primary display-month">Month</button>
               <button type="button" className="btn btn-outline-primary display-year">Year</button>
-          </div>
+          </div> */}
         </div>
         <div className="list-calendar-months ">
             <div className="calendar">   

@@ -1,11 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function EditWorkModal(props) {
   
-    const [content, setContent] = useState(props.infoEdit);
+    const [content, setContent] = useState('');
+
+    useEffect(() => {
+      setContent(props.infoEdit)
+    },[props.infoEdit]);
+
     const onChangeContent = (e) => {
         setContent(e.target.value)
     }
+    
     const listData = JSON.parse(localStorage.getItem("data"));
     const onSubmit = (e) => {
         e.preventDefault();
